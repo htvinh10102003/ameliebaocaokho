@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/notion-proxy/:match*",
+      "destination": "/api/proxy?path=:match*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
