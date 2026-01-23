@@ -10,7 +10,7 @@ const DailyPendingReport = ({ data, onDateSelect, selectedDate }) => {
             if (
                 item.internalStatus === 'Chưa đi' && 
                 item.date && 
-                (nStatus === 'Mới' || nStatus === 'Đang đóng gói')
+                (nStatus === 'Mới' || nStatus === 'Đang đóng gói' || nStatus === 'Đã xác nhận')
             ) {
                 stats[item.date] = (stats[item.date] || 0) + 1;
             }
